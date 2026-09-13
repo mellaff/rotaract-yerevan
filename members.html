@@ -54,26 +54,34 @@
   <!-- =========================================================================
        MEMBER GRID
        =========================================================================
+       PHOTOS ARE ALREADY WIRED UP. Each card below points to a short,
+       predictable filename inside images/members/ — just drop a photo with
+       that exact filename into that folder (jpg or png; if you use a
+       different extension, update the src). Until a file exists at that
+       path, the browser will show a small broken-image icon in its place —
+       that's expected and disappears the moment you add the photo.
+
+       Filenames used below:
+         president.jpg   secretary.jpg     cs_lead.jpg (Community Service)
+         vp.jpg           treasurer.jpg     int_lead.jpg (Int'l Understanding)
+         prof_lead.jpg (Professional Development)   club_lead.jpg (Club Service)
+         fin_lead.jpg (Financial)                    pi_lead.jpg (Public Image)
+
        HOW TO ADD / EDIT A MEMBER:
        1. Copy one whole <div class="card member-card"> ... </div> block below.
        2. Paste it inside <div class="grid grid-4" id="member-grid"> ... </div>
           (right before its closing </div>).
-       3. Edit the name, position, and photo for the new card.
+       3. Edit the name, position, and give the <img> a new, unique filename.
 
        The club's 6 standing committees are: Community Service, International
        Understanding, Professional Development, Club Service, Financial, and
        Public Image. Board roles (President, Vice President, Secretary,
        Treasurer) come first below, followed by one card per committee —
-       duplicate a committee's card if more than one person leads it.
+       duplicate a committee's card (with a new filename, e.g. cs_lead2.jpg)
+       if more than one person leads it.
 
        HOW TO REMOVE A MEMBER:
        - Delete their whole <div class="card member-card"> ... </div> block.
-
-       PHOTOS:
-       - Replace the <div class="placeholder-photo">...</div> with a real
-         <img src="images/members/firstname-lastname.jpg" alt="Full Name" class="member-photo" />
-         once you have real photos. Create an "images/members/" folder next
-         to this file and drop photos in there.
        ========================================================================= -->
   <section>
     <div class="container fade-in">
@@ -81,10 +89,8 @@
 
         <!-- MEMBER CARD TEMPLATE — duplicate this block for each person -->
         <div class="card member-card">
-          <!-- Placeholder photo — swap for a real <img> once available -->
-          <div class="member-photo">
-            <div class="placeholder-photo">Photo</div>
-          </div>
+          <!-- EDIT: upload a photo to images/members/president.jpg -->
+          <img src="images/members/president.jpg" alt="Firstname Lastname" class="member-photo" />
           <div class="card-body">
             <!-- EDIT: name -->
             <h3 class="member-name">Firstname Lastname</h3>
@@ -94,9 +100,8 @@
         </div>
 
         <div class="card member-card">
-          <div class="member-photo">
-            <div class="placeholder-photo">Photo</div>
-          </div>
+          <!-- EDIT: upload a photo to images/members/vp.jpg -->
+          <img src="images/members/vp.jpg" alt="Firstname Lastname" class="member-photo" />
           <div class="card-body">
             <h3 class="member-name">Firstname Lastname</h3>
             <span class="member-position">Vice President</span>
@@ -104,9 +109,8 @@
         </div>
 
         <div class="card member-card">
-          <div class="member-photo">
-            <div class="placeholder-photo">Photo</div>
-          </div>
+          <!-- EDIT: upload a photo to images/members/secretary.jpg -->
+          <img src="images/members/secretary.jpg" alt="Firstname Lastname" class="member-photo" />
           <div class="card-body">
             <h3 class="member-name">Firstname Lastname</h3>
             <span class="member-position">Secretary</span>
@@ -114,21 +118,20 @@
         </div>
 
         <div class="card member-card">
-          <div class="member-photo">
-            <div class="placeholder-photo">Photo</div>
-          </div>
+          <!-- EDIT: upload a photo to images/members/treasurer.jpg -->
+          <img src="images/members/treasurer.jpg" alt="Firstname Lastname" class="member-photo" />
           <div class="card-body">
             <h3 class="member-name">Firstname Lastname</h3>
             <span class="member-position">Treasurer</span>
           </div>
         </div>
 
-        <!-- COMMITTEE CHAIRS — edit names; duplicate a block below to add
-             more people to the same committee, or add a new committee. -->
+        <!-- COMMITTEE CHAIRS — edit names; duplicate a block below (with a
+             new filename) to add more people to the same committee, or to
+             add a new committee. -->
         <div class="card member-card">
-          <div class="member-photo">
-            <div class="placeholder-photo">Photo</div>
-          </div>
+          <!-- EDIT: upload a photo to images/members/cs_lead.jpg -->
+          <img src="images/members/cs_lead.jpg" alt="Firstname Lastname" class="member-photo" />
           <div class="card-body">
             <h3 class="member-name">Firstname Lastname</h3>
             <span class="member-position">Community Service Committee</span>
@@ -136,9 +139,8 @@
         </div>
 
         <div class="card member-card">
-          <div class="member-photo">
-            <div class="placeholder-photo">Photo</div>
-          </div>
+          <!-- EDIT: upload a photo to images/members/int_lead.jpg -->
+          <img src="images/members/int_lead.jpg" alt="Firstname Lastname" class="member-photo" />
           <div class="card-body">
             <h3 class="member-name">Firstname Lastname</h3>
             <span class="member-position">International Understanding Committee</span>
@@ -146,9 +148,8 @@
         </div>
 
         <div class="card member-card">
-          <div class="member-photo">
-            <div class="placeholder-photo">Photo</div>
-          </div>
+          <!-- EDIT: upload a photo to images/members/prof_lead.jpg -->
+          <img src="images/members/prof_lead.jpg" alt="Firstname Lastname" class="member-photo" />
           <div class="card-body">
             <h3 class="member-name">Firstname Lastname</h3>
             <span class="member-position">Professional Development Committee</span>
@@ -156,9 +157,8 @@
         </div>
 
         <div class="card member-card">
-          <div class="member-photo">
-            <div class="placeholder-photo">Photo</div>
-          </div>
+          <!-- EDIT: upload a photo to images/members/club_lead.jpg -->
+          <img src="images/members/club_lead.jpg" alt="Firstname Lastname" class="member-photo" />
           <div class="card-body">
             <h3 class="member-name">Firstname Lastname</h3>
             <span class="member-position">Club Service Committee</span>
@@ -166,9 +166,8 @@
         </div>
 
         <div class="card member-card">
-          <div class="member-photo">
-            <div class="placeholder-photo">Photo</div>
-          </div>
+          <!-- EDIT: upload a photo to images/members/fin_lead.jpg -->
+          <img src="images/members/fin_lead.jpg" alt="Firstname Lastname" class="member-photo" />
           <div class="card-body">
             <h3 class="member-name">Firstname Lastname</h3>
             <span class="member-position">Financial Committee</span>
@@ -176,9 +175,8 @@
         </div>
 
         <div class="card member-card">
-          <div class="member-photo">
-            <div class="placeholder-photo">Photo</div>
-          </div>
+          <!-- EDIT: upload a photo to images/members/pi_lead.jpg -->
+          <img src="images/members/pi_lead.jpg" alt="Firstname Lastname" class="member-photo" />
           <div class="card-body">
             <h3 class="member-name">Firstname Lastname</h3>
             <span class="member-position">Public Image Committee</span>
