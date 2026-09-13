@@ -7,33 +7,37 @@ step — so it runs directly on GitHub Pages.
 ## Files
 
 ```
-index.html       Home / About the club
-rotaract.html    What is Rotaract
-members.html     Member cards (easy to duplicate/edit)
-projects.html    Project cards (easy to duplicate/edit)
-style.css        Shared styles for all pages (colors, layout, fonts)
-script.js        Shared behavior (mobile menu, scroll animations)
-README.md        This file
+index.html          Home / About the club
+rotaract.html        What is Rotaract
+members.html         Member cards (easy to duplicate/edit)
+projects.html        Project cards (easy to duplicate/edit)
+style.css            Shared styles for all pages (colors, layout, fonts)
+script.js            Shared behavior (mobile menu, scroll animations)
+favicon.ico          Browser tab icon (fallback format)
+images/logo.svg      Your club logo, shown in the navbar on every page
+images/favicon.svg   Browser tab icon (cropped gear mark from your logo)
+images/favicon-32.png, favicon-16.png, apple-touch-icon.png
+                     PNG fallbacks of the favicon for older browsers / iOS
+README.md            This file
 ```
 
-Create an `images/` folder next to these files, with three things in it:
-- `logo.svg` (or `logo.png`) — your club logo, shown in the navbar. This is
-  required for the navbar to display correctly (see step 1 below).
-- `images/members/` — for real member photos, once you have them.
-- `images/projects/` — for real project photos, once you have them.
+Your logo (`images/logo.svg`) is already wired into the navbar on all four
+pages, and a favicon generated from its gear-wheel mark is already set up
+for the browser tab. To swap in an updated logo later, just replace
+`images/logo.svg` with the new file (same filename) — no HTML edits
+needed. If you also want the favicon to match a new logo, ask me to
+regenerate it, since that crop is done by hand.
 
-See the comments inside `members.html` and `projects.html` for exactly
-where to swap placeholder photos for real ones.
+You can also create `images/members/` and `images/projects/` subfolders
+once you have real photos to replace the placeholder boxes — see the
+comments inside `members.html` and `projects.html` for exactly where to
+swap them in.
 
 ## 1. Before you publish — things to edit
 
 Open each file and look for `<!-- EDIT: ... -->` comments — they mark every
 spot you should personalize:
 
-- **Logo** — add your logo file as `images/logo.svg` (or update the `<img>`
-  path in the navbar of all four pages if you name it differently). Until
-  this file exists, the navbar will show a small broken-image icon instead
-  of a logo — that's expected and disappears once you add the file.
 - **Facebook link** — in the footer of all four pages. Search for
   `YOUR_FACEBOOK_PAGE`. (No Instagram link is needed on the site itself,
   since the site link will live in your Instagram bio.)
