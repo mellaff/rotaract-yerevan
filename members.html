@@ -18,7 +18,10 @@
   <header class="navbar">
     <div class="container">
       <a href="index.html" class="nav-brand">
-        <span class="dot"></span>
+        <!-- LOGO: replace this img src with your real logo file once added,
+             e.g. images/logo.svg or images/logo.png. Keep it in an
+             "images" folder next to this file. -->
+        <img src="images/logo.svg" alt="Rotaract Yerevan logo" class="nav-logo" />
         Rotaract Yerevan
       </a>
 
@@ -52,6 +55,12 @@
        2. Paste it inside <div class="grid grid-4" id="member-grid"> ... </div>
           (right before its closing </div>).
        3. Edit the name, position, and photo for the new card.
+
+       The club's 6 standing committees are: Community Service, International
+       Understanding, Professional Development, Club Service, Financial, and
+       Public Image. Board roles (President, Vice President, Secretary,
+       Treasurer) come first below, followed by one card per committee —
+       duplicate a committee's card if more than one person leads it.
 
        HOW TO REMOVE A MEMBER:
        - Delete their whole <div class="card member-card"> ... </div> block.
@@ -110,13 +119,15 @@
           </div>
         </div>
 
+        <!-- COMMITTEE CHAIRS — edit names; duplicate a block below to add
+             more people to the same committee, or add a new committee. -->
         <div class="card member-card">
           <div class="member-photo">
             <div class="placeholder-photo">Photo</div>
           </div>
           <div class="card-body">
             <h3 class="member-name">Firstname Lastname</h3>
-            <span class="member-position">Service Projects Director</span>
+            <span class="member-position">Community Service Committee</span>
           </div>
         </div>
 
@@ -126,7 +137,7 @@
           </div>
           <div class="card-body">
             <h3 class="member-name">Firstname Lastname</h3>
-            <span class="member-position">Membership Director</span>
+            <span class="member-position">International Understanding Committee</span>
           </div>
         </div>
 
@@ -136,7 +147,7 @@
           </div>
           <div class="card-body">
             <h3 class="member-name">Firstname Lastname</h3>
-            <span class="member-position">PR & Communications Director</span>
+            <span class="member-position">Professional Development Committee</span>
           </div>
         </div>
 
@@ -146,7 +157,27 @@
           </div>
           <div class="card-body">
             <h3 class="member-name">Firstname Lastname</h3>
-            <span class="member-position">Member</span>
+            <span class="member-position">Club Service Committee</span>
+          </div>
+        </div>
+
+        <div class="card member-card">
+          <div class="member-photo">
+            <div class="placeholder-photo">Photo</div>
+          </div>
+          <div class="card-body">
+            <h3 class="member-name">Firstname Lastname</h3>
+            <span class="member-position">Financial Committee</span>
+          </div>
+        </div>
+
+        <div class="card member-card">
+          <div class="member-photo">
+            <div class="placeholder-photo">Photo</div>
+          </div>
+          <div class="card-body">
+            <h3 class="member-name">Firstname Lastname</h3>
+            <span class="member-position">Public Image Committee</span>
           </div>
         </div>
         <!-- END MEMBER CARD TEMPLATE -->
@@ -176,7 +207,7 @@
         <h4>Get in touch</h4>
         <p><a href="mailto:info@rotaractyerevan.org">info@rotaractyerevan.org</a></p>
         <div class="footer-social">
-          <a href="https://instagram.com/YOUR_INSTAGRAM_HANDLE" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <!-- EDIT: replace # with your real Facebook link -->
           <a href="https://facebook.com/YOUR_FACEBOOK_PAGE" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
         </div>
       </div>

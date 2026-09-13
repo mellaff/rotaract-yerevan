@@ -16,25 +16,36 @@ script.js        Shared behavior (mobile menu, scroll animations)
 README.md        This file
 ```
 
-Optional: create an `images/` folder (with `images/members/` and
-`images/projects/` subfolders) once you have real photos to replace the
-placeholder boxes. See the comments inside `members.html` and
-`projects.html` for exactly where to swap them in.
+Create an `images/` folder next to these files, with three things in it:
+- `logo.svg` (or `logo.png`) — your club logo, shown in the navbar. This is
+  required for the navbar to display correctly (see step 1 below).
+- `images/members/` — for real member photos, once you have them.
+- `images/projects/` — for real project photos, once you have them.
+
+See the comments inside `members.html` and `projects.html` for exactly
+where to swap placeholder photos for real ones.
 
 ## 1. Before you publish — things to edit
 
 Open each file and look for `<!-- EDIT: ... -->` comments — they mark every
 spot you should personalize:
 
-- **Instagram / Facebook links** — in `index.html` (hero + CTA) and in the
-  footer of all four pages. Search for `YOUR_INSTAGRAM_HANDLE` and
-  `YOUR_FACEBOOK_PAGE`.
+- **Logo** — add your logo file as `images/logo.svg` (or update the `<img>`
+  path in the navbar of all four pages if you name it differently). Until
+  this file exists, the navbar will show a small broken-image icon instead
+  of a logo — that's expected and disappears once you add the file.
+- **Facebook link** — in the footer of all four pages. Search for
+  `YOUR_FACEBOOK_PAGE`. (No Instagram link is needed on the site itself,
+  since the site link will live in your Instagram bio.)
 - **Contact email** — search for `info@rotaractyerevan.org` in the footer
-  of all four pages and in `projects.html`.
+  of all four pages, in the homepage CTA, and in `projects.html`.
 - **Founding year / mission text** — in `index.html`.
 - **Rotary sponsor club name** — in `rotaract.html`.
-- **Member cards** — in `members.html`. Duplicate the card block for each
-  real member, and delete the placeholder ones you don't need.
+- **Member cards** — in `members.html`. Board roles (President, VP,
+  Secretary, Treasurer) come first, followed by one card per committee:
+  Community Service, International Understanding, Professional
+  Development, Club Service, Financial, and Public Image. Duplicate a
+  card for anyone else on that committee, and add real names/photos.
 - **Project cards** — in `projects.html`. The environmental bins project
   is already filled in as an example; duplicate its card block for new
   projects.
