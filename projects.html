@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Rotaract Club of Yerevan</title>
+  <meta name="description" content="Community, environmental, and fellowship projects run by the Rotaract Club of Yerevan." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR (same on every page — keep these 4 links in sync across files) -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <span class="dot"></span>
+        Rotaract Yerevan
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="rotaract.html">What is Rotaract</a>
+        <a href="members.html">Members</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Our work</p>
+      <h1>Projects</h1>
+      <p>Service projects designed and run by our members across Yerevan.</p>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       PROJECT GRID
+       =========================================================================
+       HOW TO ADD A NEW PROJECT:
+       1. Copy one whole <div class="card project-card"> ... </div> block below.
+       2. Paste it inside <div class="grid grid-3" id="project-grid">, right
+          before its closing </div>.
+       3. Edit the tag, title, description, and photo.
+
+       TAG COLORS (edit the class on <span class="project-tag ...">):
+       - tag-environmental  -> green   (e.g. clean-ups, recycling, bins)
+       - tag-community      -> magenta (e.g. donation drives, volunteering)
+       - tag-fellowship     -> gold    (e.g. socials, member events)
+       You can add more tag colors in style.css under "PROJECT CARDS".
+
+       HOW TO REMOVE A PROJECT:
+       - Delete its whole <div class="card project-card"> ... </div> block.
+
+       PHOTOS:
+       - Replace <div class="placeholder-photo">...</div> with a real
+         <img src="images/projects/project-name.jpg" alt="Project name" class="project-photo" />
+         Create an "images/projects/" folder next to this file for photos.
+       ========================================================================= -->
+  <section>
+    <div class="container fade-in">
+      <div class="grid grid-3" id="project-grid">
+
+        <!-- PROJECT CARD: Environmental bins (real project — edit freely) -->
+        <div class="card project-card">
+          <div class="project-photo">
+            <div class="placeholder-photo">Project photo</div>
+          </div>
+          <div class="card-body">
+            <span class="project-tag tag-environmental">Environmental</span>
+            <!-- EDIT: title -->
+            <h3>Public Space Recycling Bins</h3>
+            <!-- EDIT: description -->
+            <p>
+              Designing and installing metal mesh wire cage bins — shaped like globes
+              and bottles — for public spaces around Yerevan, encouraging recycling
+              and adding a bit of creative design to the city.
+            </p>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD TEMPLATE — duplicate this block for each new project -->
+        <div class="card project-card">
+          <div class="project-photo">
+            <div class="placeholder-photo">Project photo</div>
+          </div>
+          <div class="card-body">
+            <span class="project-tag tag-community">Community</span>
+            <!-- EDIT: title -->
+            <h3>Project Title Here</h3>
+            <!-- EDIT: description -->
+            <p>
+              Short one- or two-sentence description of what the project is and who
+              it helps. Keep it brief and specific.
+            </p>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-photo">
+            <div class="placeholder-photo">Project photo</div>
+          </div>
+          <div class="card-body">
+            <span class="project-tag tag-fellowship">Fellowship</span>
+            <!-- EDIT: title -->
+            <h3>Project Title Here</h3>
+            <!-- EDIT: description -->
+            <p>
+              Short one- or two-sentence description of what the project is and who
+              it helps. Keep it brief and specific.
+            </p>
+          </div>
+        </div>
+        <!-- END PROJECT CARD TEMPLATE -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       CTA to get involved
+       ===================================================================== -->
+  <section class="section-soft">
+    <div class="container fade-in">
+      <div class="cta-banner">
+        <h2>Have an idea for a project?</h2>
+        <p>We're always looking for new ideas and hands to help. Reach out and get involved.</p>
+        <a href="mailto:info@rotaractyerevan.org" class="btn btn-primary">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (same on every page) -->
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <h4>Rotaract Club of Yerevan</h4>
+        <p>Young leaders serving our community in Yerevan, Armenia, through
+          service, leadership, and fellowship.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rotaract.html">What is Rotaract</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <p><a href="mailto:info@rotaractyerevan.org">info@rotaractyerevan.org</a></p>
+        <div class="footer-social">
+          <a href="https://instagram.com/YOUR_INSTAGRAM_HANDLE" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://facebook.com/YOUR_FACEBOOK_PAGE" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> Rotaract Club of Yerevan. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
