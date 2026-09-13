@@ -62,23 +62,27 @@
        that's expected and disappears the moment you add the photo.
 
        Filenames used below:
-         president.jpg   secretary.jpg     cs_lead.jpg (Community Service)
-         vp.jpg           treasurer.jpg     int_lead.jpg (Int'l Understanding)
-         prof_lead.jpg (Professional Development)   club_lead.jpg (Club Service)
-         fin_lead.jpg (Financial)                    pi_lead.jpg (Public Image)
+         president.jpg   secretary.jpg     cs_lead.jpg (Community Service +
+         vp.jpg                             Club Service — Nare)
+         int_lead.jpg     prof_lead.jpg     pi_lead.jpg (Public Image)
+         member.jpg (Inga)
+
+       IMPORTANT: the alt="..." text on each <img> should always match that
+       person's real name (not "Firstname Lastname"). Screen readers and
+       the broken-image icon both display the alt text, so keeping it
+       accurate matters even before a photo is uploaded.
 
        HOW TO ADD / EDIT A MEMBER:
        1. Copy one whole <div class="card member-card"> ... </div> block below.
        2. Paste it inside <div class="grid grid-4" id="member-grid"> ... </div>
           (right before its closing </div>).
-       3. Edit the name, position, and give the <img> a new, unique filename.
+       3. Edit the name, alt text, position(s), and give the <img> a new,
+          unique filename.
 
-       The club's 6 standing committees are: Community Service, International
-       Understanding, Professional Development, Club Service, Financial, and
-       Public Image. Board roles (President, Vice President, Secretary,
-       Treasurer) come first below, followed by one card per committee —
-       duplicate a committee's card (with a new filename, e.g. cs_lead2.jpg)
-       if more than one person leads it.
+       MULTIPLE ROLES FOR ONE PERSON:
+       Add an extra <span class="member-position">...</span> under the same
+       card instead of duplicating their photo in a second card (see Yeva
+       and Nare below for examples).
 
        HOW TO REMOVE A MEMBER:
        - Delete their whole <div class="card member-card"> ... </div> block.
@@ -90,31 +94,35 @@
         <!-- MEMBER CARD TEMPLATE — duplicate this block for each person -->
         <div class="card member-card">
           <!-- EDIT: upload a photo to images/members/president.jpg -->
-          <img src="images/members/president.jpg" alt="Firstname Lastname" class="member-photo" />
+          <img src="images/members/president.jpg" alt="Lusine Vardanyan" class="member-photo" />
           <div class="card-body">
-            <!-- EDIT: name -->
             <h3 class="member-name">Lusine Vardanyan</h3>
-            <!-- EDIT: position -->
-            <span class="member-position">President</span>
+            <div class="member-positions">
+              <span class="member-position">President</span>
+            </div>
           </div>
         </div>
 
         <div class="card member-card">
           <!-- EDIT: upload a photo to images/members/vp.jpg -->
-          <img src="images/members/vp.jpg" alt="Firstname Lastname" class="member-photo" />
+          <img src="images/members/vp.jpg" alt="Ani Yezekyan" class="member-photo" />
           <div class="card-body">
             <h3 class="member-name">Ani Yezekyan</h3>
-            <span class="member-position">Vice President</span>
+            <div class="member-positions">
+              <span class="member-position">Vice President</span>
+            </div>
           </div>
         </div>
 
         <div class="card member-card">
           <!-- EDIT: upload a photo to images/members/secretary.jpg -->
-          <img src="images/members/secretary.jpg" alt="Firstname Lastname" class="member-photo" />
+          <img src="images/members/secretary.jpg" alt="Yeva Yeghoyan" class="member-photo" />
           <div class="card-body">
             <h3 class="member-name">Yeva Yeghoyan</h3>
-            <span class="member-position">Secretary</span>
-            <span class="member-position">Treasurer</span>
+            <div class="member-positions">
+              <span class="member-position">Secretary</span>
+              <span class="member-position">Treasurer</span>
+            </div>
           </div>
         </div>
 
@@ -123,47 +131,57 @@
              add a new committee. -->
         <div class="card member-card">
           <!-- EDIT: upload a photo to images/members/cs_lead.jpg -->
-          <img src="images/members/cs_lead.jpg" alt="Firstname Lastname" class="member-photo" />
+          <img src="images/members/cs_lead.jpg" alt="Nare Abgaryan" class="member-photo" />
           <div class="card-body">
             <h3 class="member-name">Nare Abgaryan</h3>
-            <span class="member-position">Community Service Committee</span>
-            <span class="member-position">Club Service Committee</span>
+            <div class="member-positions">
+              <span class="member-position">Community Service Committee</span>
+              <span class="member-position">Club Service Committee</span>
+            </div>
           </div>
         </div>
 
         <div class="card member-card">
           <!-- EDIT: upload a photo to images/members/int_lead.jpg -->
-          <img src="images/members/int_lead.jpg" alt="Firstname Lastname" class="member-photo" />
+          <img src="images/members/int_lead.jpg" alt="Meline Afrikyan" class="member-photo" />
           <div class="card-body">
             <h3 class="member-name">Meline Afrikyan</h3>
-            <span class="member-position">International Understanding Committee</span>
+            <div class="member-positions">
+              <span class="member-position">International Understanding Committee</span>
+            </div>
           </div>
         </div>
 
         <div class="card member-card">
           <!-- EDIT: upload a photo to images/members/prof_lead.jpg -->
-          <img src="images/members/prof_lead.jpg" alt="Firstname Lastname" class="member-photo" />
+          <img src="images/members/prof_lead.jpg" alt="Karina Harutyunyan" class="member-photo" />
           <div class="card-body">
             <h3 class="member-name">Karina Harutyunyan</h3>
-            <span class="member-position">Professional Development Committee</span>
+            <div class="member-positions">
+              <span class="member-position">Professional Development Committee</span>
+            </div>
           </div>
         </div>
 
         <div class="card member-card">
           <!-- EDIT: upload a photo to images/members/pi_lead.jpg -->
-          <img src="images/members/pi_lead.jpg" alt="Firstname Lastname" class="member-photo" />
+          <img src="images/members/pi_lead.jpg" alt="Nazeli Melkumyan" class="member-photo" />
           <div class="card-body">
             <h3 class="member-name">Nazeli Melkumyan</h3>
-            <span class="member-position">Public Image Committee</span>
+            <div class="member-positions">
+              <span class="member-position">Public Image Committee</span>
+            </div>
           </div>
         </div>
 
         <div class="card member-card">
-          <!-- EDIT: upload a photo to images/members/pi_lead.jpg -->
-          <img src="images/members/member.jpg" alt="Firstname Lastname" class="member-photo" />
+          <!-- EDIT: upload a photo to images/members/member.jpg -->
+          <img src="images/members/member.jpg" alt="Inga Avagyan" class="member-photo" />
           <div class="card-body">
             <h3 class="member-name">Inga Avagyan</h3>
-            <span class="member-position">Member</span>
+            <div class="member-positions">
+              <span class="member-position">Member</span>
+            </div>
           </div>
         </div>
         <!-- END MEMBER CARD TEMPLATE -->
