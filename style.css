@@ -113,7 +113,7 @@ section {
   color: var(--color-text-muted);
   max-width: 680px;
   margin-bottom: 40px;
-  line-height: 1.8;   /* ADD THIS — default inherited from body is 1.6 */
+  line-height: 2.0;   /* ADD THIS — default inherited from body is 1.6 */
 }
 
 /* -------------------------------------------------------------------------
