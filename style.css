@@ -727,8 +727,14 @@ section {
   align-items: center;
 }
 
+.about-text,
+.about-image-wrap {
+  min-width: 0;   /* ADD THIS — stops the image's natural size from blowing out the grid track */
+}
+
 .about-image-wrap {
   width: 100%;
+  overflow: hidden;   /* extra safety: clips anything that still tries to overflow */
 }
 
 .about-image {
