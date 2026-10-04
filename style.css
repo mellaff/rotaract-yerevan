@@ -299,7 +299,7 @@ section {
    5. HERO SECTIONS
    ========================================================================= */
 .hero {
-  padding: 90px 0 70px;
+  padding: 90px 0 50px;   /* was 70px, trimmed by 20px */
   background: linear-gradient(160deg, var(--color-primary-light) 0%, #ffffff 60%);
   text-align: center;
 }
@@ -602,7 +602,8 @@ section {
   border-radius: var(--radius);
   padding: 48px 32px;
   text-align: center;
-  margin: 20px auto 0;
+  max-width: 640px;      /* ADD THIS */
+  margin: 20px auto 0;   /* already centers it, now it'll actually look centered */
 }
 
 .cta-banner h2 {
@@ -724,6 +725,7 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
+  padding-top: 0;    /* relies on parent section's padding, no extra needed */
 }
 
 .about-image img {
