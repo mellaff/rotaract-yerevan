@@ -767,3 +767,41 @@ section {
   .about-grid { grid-template-columns: 1fr; }
   .about-image-wrap { margin-left: 0; }
 }
+
+.cta-split {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  background: var(--color-primary);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.cta-content {
+  padding: 56px 48px;
+  color: #fff;
+}
+
+.cta-content h2 { margin-bottom: 12px; }
+.cta-content p {
+  color: rgba(255,255,255,0.85);
+  max-width: 420px;
+  margin-bottom: 28px;
+}
+
+.cta-content .btn-primary {
+  background: #fff;
+  color: var(--color-primary-dark);
+}
+
+.cta-mark {
+  background: var(--color-primary-dark);
+  background-image: url('images/gear-mark.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65%;
+}
+
+@media (max-width: 760px) {
+  .cta-split { grid-template-columns: 1fr; }
+  .cta-mark { display: none; }
+}
