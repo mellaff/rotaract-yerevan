@@ -755,17 +755,17 @@ section {
 }
 
 .cta-split {
-.cta-split {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
   background: var(--color-primary);
   border-radius: var(--radius);
-  overflow: hidden;    /* ADD THIS — clips the photo to the rounded corners */
+  overflow: hidden;
+  height: 380px;    /* ADD THIS — caps the whole banner's height */
 }
 
 .cta-photo {
   width: 100%;
-  height: 100%;         /* fills the grid row's height instead of its own aspect-ratio */
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -775,7 +775,8 @@ section {
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* vertically centers the text against the photo's height */
+  justify-content: center;
+  overflow-y: auto;   /* safety: if text ever runs long, it scrolls instead of breaking the fixed height */
 }
 
 .cta-content h2 { margin-bottom: 12px; }
