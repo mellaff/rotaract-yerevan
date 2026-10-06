@@ -755,16 +755,27 @@ section {
 }
 
 .cta-split {
+.cta-split {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
   background: var(--color-primary);
   border-radius: var(--radius);
-  overflow: hidden;
+  overflow: hidden;    /* ADD THIS — clips the photo to the rounded corners */
+}
+
+.cta-photo {
+  width: 100%;
+  height: 100%;         /* fills the grid row's height instead of its own aspect-ratio */
+  object-fit: cover;
+  display: block;
 }
 
 .cta-content {
   padding: 56px 48px;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertically centers the text against the photo's height */
 }
 
 .cta-content h2 { margin-bottom: 12px; }
